@@ -130,6 +130,15 @@ In a car manufacturing system, have a base class called "Vehicle" with a method 
 Scenario 2: Online Shopping
 In an online shopping system, create a base class called "Product" with a method called "displayDetails" that shows general product information. Implement derived classes like "Electronics" and "Clothing" that override the "displayDetails" method and use the super keyword to display both general and specific product details.
 
+Instance Initializer block:
+
+Scenario 1: Employee Database
+In an employee database system, create a class called "Employee" with an instance initializer block that initializes a static database connection. The block runs whenever an object of the "Employee" class is created.
+
+Scenario 2: Game Initialization
+In a game development scenario, have a class called "Game" with an instance initializer block that sets up the game environment, loads resources, and performs initialization tasks when a new game object is created.
+
+
 
 Set 2:
 
@@ -164,3 +173,11 @@ In a vehicle manufacturing system, have a base class called "Vehicle" with a met
 
 Scenario 2: Online Retail System
 In an online retail system, create a base class called "Product" with a method called "displayDetails" that shows general product information. Implement derived classes like "ElectronicsProduct" and "ClothingProduct" that override the "displayDetails" method and use the super keyword to display both general and specific product details.
+
+Instance Initializer block:
+
+Scenario 1: Online Game Initialization
+In an online game development scenario, have a class called "Game" with an instance initializer block that sets up the game environment, loads resources, and performs initialization tasks when a new game object is created.
+
+Scenario 2: Company Employee Management
+In a company employee management system, create a class called "Employee" with an instance initializer block that initializes an employee's access privileges and permissions when a new employee object is created.
