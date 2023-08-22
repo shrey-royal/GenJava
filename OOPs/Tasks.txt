@@ -138,7 +138,21 @@ In an employee database system, create a class called "Employee" with an instanc
 Scenario 2: Game Initialization
 In a game development scenario, have a class called "Game" with an instance initializer block that sets up the game environment, loads resources, and performs initialization tasks when a new game object is created.
 
+final keyword:
 
+Scenario 1: Math Constants
+In a mathematical calculation library, define a class called "MathConstants" with final variables for commonly used mathematical constants like pi and e. These variables cannot be modified and hold their constant values throughout the program.
+
+Scenario 2: Configuration Settings
+In a configuration management system, define a class called "Configuration" with final variables for system settings like database URL, username, and password. These variables cannot be modified and represent fixed configuration values.
+
+Runtime Polymorphism / Dynamic Binding:
+
+Scenario 1: Vehicle Rental System
+In a vehicle rental system, create a base class called "Vehicle" with a method called "rent" that performs the rental process. Implement derived classes like "Car" and "Motorcycle" that override the "rent" method with their specific rental processes.
+
+Scenario 2: Shape Drawing Application
+In a shape drawing application, define a base class called "Shape" with a method called "draw" that displays the shape on the screen. Implement derived classes like "Circle" and "Rectangle" that override the "draw" method with their specific drawing logic.
 
 Set 2:
 
@@ -181,3 +195,19 @@ In an online game development scenario, have a class called "Game" with an insta
 
 Scenario 2: Company Employee Management
 In a company employee management system, create a class called "Employee" with an instance initializer block that initializes an employee's access privileges and permissions when a new employee object is created.
+
+final keyword:
+
+Scenario 1: Math Calculations
+In a math calculation library, define a class called "MathUtils" with final methods for commonly used mathematical calculations like square root and logarithm. These methods cannot be overridden and provide consistent behavior throughout the program.
+
+Scenario 2: Database Connectivity
+In a database connectivity framework, define a class called "DatabaseConnection" with a final variable for the database connection URL. This variable cannot be modified and represents the fixed database connection URL.
+
+Runtime Polymorphism / Dynamic Binding:
+
+Scenario 1: Vehicle Rental Management System
+In a vehicle rental management system, create a base class called "Vehicle" with a method called "rent" that performs the rental process. Implement derived classes like "Car" and "Motorcycle" that override the "rent" method with their specific rental processes.
+
+Scenario 2: Shape Drawing Application
+In a shape drawing application, define a base class called "Shape" with a method called "draw" that displays the shape on the screen. Implement derived classes like "Circle" and "Rectangle" that override the "draw" method with their specific drawing logic.
