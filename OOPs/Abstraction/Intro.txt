@@ -1,0 +1,13 @@
+Abstraction in Java:
+
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+for example:
+
+Suppose we are at Manubhai ni bakery and we are ordering a cake. We don’t know how the cake is being made and what ingredients are used to make it. We just know how to order it and what will be the cost of the cake. Here the bakery is doing abstraction.
+
+Suppose we got our hands on the new iPhone 14 pro max and we are using it. We don’t know how the iPhone is working internally. We just know how to use it. Here the iPhone is doing abstraction.
+
+Abstraction is achieved in java by using abstract classes and interfaces.
+
+using abstract classes we can achieve partial abstraction and using interfaces we can achieve full abstraction.
