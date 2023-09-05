@@ -227,3 +227,155 @@ In a university course registration system, have classes like "Course," "Lecture
 
 Scenario 2: Vehicle Service Center
 In a vehicle service center application, create classes like "Vehicle," "Car," and "Motorcycle" representing different types of vehicles. Use the instanceof operator to identify the type of vehicle and perform specific service operations based on the vehicle's type.
+
+
+Abstraction: 
+
+Abstract Class:
+
+Scenario 1: Animal Hierarchy
+Create an abstract class called "Animal" with abstract methods like "eat" and "sound." Implement derived classes like "Cat" and "Dog" that provide specific implementations for these abstract methods.
+
+Scenario 2: Vehicle Manufacturing
+Design an abstract class called "Vehicle" with abstract methods like "assemble" and "paint." Implement derived classes like "Car" and "Motorcycle" that provide specific implementations for these abstract methods.
+
+Scenario 3: Banking System
+Develop an abstract class called "Account" with abstract methods like "deposit" and "withdraw." Implement derived classes like "SavingsAccount" and "CurrentAccount" that provide specific implementations for these abstract methods.
+
+Scenario 4: Shape Calculation
+Create an abstract class called "Shape" with abstract methods like "calculateArea" and "calculatePerimeter." Implement derived classes like "Circle" and "Rectangle" that provide specific implementations for these abstract methods.
+
+Scenario 5: Employee Management
+Design an abstract class called "Employee" with abstract methods like "calculateSalary" and "displayDetails." Implement derived classes like "Manager" and "Engineer" that provide specific implementations for these abstract methods.
+
+Scenario 6: Music Player Application
+Develop an abstract class called "MediaPlayer" with abstract methods like "play" and "stop." Implement derived classes like "AudioPlayer" and "VideoPlayer" that provide specific implementations for these abstract methods.
+
+Scenario 7: University Management System
+Create an abstract class called "Person" with abstract methods like "registerCourse" and "submitAssignment." Implement derived classes like "Student" and "Professor" that provide specific implementations for these abstract methods.
+
+Scenario 8: Mobile Application Development
+Design an abstract class called "App" with abstract methods like "open" and "close." Implement derived classes like "ChatApp" and "PhotoEditingApp" that provide specific implementations for these abstract methods.
+
+Scenario 9: Shopping Cart System
+Develop an abstract class called "CartItem" with abstract methods like "calculatePrice" and "displayDetails." Implement derived classes like "ElectronicsItem" and "ClothingItem" that provide specific implementations for these abstract methods.
+
+Scenario 10: Recipe Management Application
+Create an abstract class called "Recipe" with abstract methods like "prepareIngredients" and "cook." Implement derived classes like "SoupRecipe" and "DessertRecipe" that provide specific implementations for these abstract methods.
+
+Interface:
+
+Scenario 1: Payment Gateway Integration
+Design an interface called "PaymentGateway" with methods like "processPayment" and "refundPayment." Implement classes like "PayPalGateway" and "StripeGateway" that provide specific implementations for these interface methods.
+
+Scenario 2: Messaging Service Integration
+Develop an interface called "MessagingService" with methods like "sendMessage" and "receiveMessage." Implement classes like "EmailService" and "SMSService" that provide specific implementations for these interface methods.
+
+Scenario 3: Database Connectivity
+Create an interface called "DatabaseConnection" with methods like "connect" and "disconnect." Implement classes like "MySQLConnection" and "PostgreSQLConnection" that provide specific implementations for these interface methods.
+
+Scenario 4: Online Ordering System
+Design an interface called "OrderProcessor" with methods like "placeOrder" and "cancelOrder." Implement classes like "CreditCardProcessor" and "PayPalProcessor" that provide specific implementations for these interface methods.
+
+Scenario 5: Travel Booking System
+Develop an interface called "TravelBooking" with methods like "bookTicket" and "cancelBooking." Implement classes like "FlightBooking" and "HotelBooking" that provide specific implementations for these interface methods.
+
+Scenario 6: Social Media Integration
+Create an interface called "SocialMediaIntegration" with methods like "sharePost" and "likePost." Implement classes like "FacebookIntegration" and "TwitterIntegration" that provide specific implementations for these interface methods.
+
+Scenario 7: Geolocation Services
+Design an interface called "GeolocationService" with methods like "getCurrentLocation" and "calculateDistance." Implement classes like "GoogleMapsService" and "HereMapsService" that provide specific implementations for these interface methods.
+
+Scenario 8: File Processing Application
+Develop an interface called "FileProcessor" with methods like "readFile" and "writeFile." Implement classes like "TextFileProcessor" and "CSVFileProcessor" that provide specific implementations for these interface methods.
+
+Scenario 9: Online Music Streaming
+Create an interface called "MusicPlayer" with methods like "playSong" and "stopSong." Implement classes like "SpotifyPlayer" and "AppleMusicPlayer" that provide specific implementations for these interface methods.
+
+Scenario 10: Weather Forecast Service
+Design an interface called "WeatherService" with methods like "getCurrentWeather" and "getForecast." Implement classes like "OpenWeatherMapService" and "AccuWeatherService" that provide specific implementations for these interface methods.
+
+Encapsulation: 
+
+Package:
+
+Scenario 1: Banking System
+Create a package called "bank" that contains classes like "Account," "Transaction," and "Customer" that are related to banking operations. Place these classes in the "bank" package to organize and group them together.
+
+Scenario 2: E-commerce Platform
+Design a package called "ecommerce" that includes classes like "Product," "Cart," and "Order" that are related to online shopping. Place these classes in the "ecommerce" package to encapsulate and manage them as a cohesive unit.
+
+Scenario 3: Hospital Management System
+Develop a package called "hospital" that contains classes like "Doctor," "Patient," and "Appointment" that handle various aspects of managing a hospital. Place these classes in the "hospital" package to provide organization and separation from other modules.
+
+Scenario 4: Game Development
+Create a package called "game" that includes classes like "Player," "Enemy," and "Level" that are used in a game development project. Place these classes in the "game" package to maintain a logical grouping of game-related components.
+
+Scenario 5: Social Media Application
+Design a package called "socialmedia" that contains classes like "User," "Post," and "Comment" that handle functionalities of a social media application. Place these classes in the "socialmedia" package to keep them organized and separate from other modules.
+
+Access Modifiers:
+
+Scenario 1: Banking System
+In a banking system, use the "private" access modifier for sensitive information like customer account balances to restrict direct access to this data.
+
+Scenario 2: Online Store
+In an online store application, use the "public" access modifier for methods that provide services to customers, such as adding items to a shopping cart or processing payments.
+
+Scenario 3: University Management System
+In a university management system, use the "protected" access modifier for class members that need to be accessed by derived classes, such as a "Student" class accessing the "name" attribute in the "Person" class.
+
+Scenario 4: Employee Database
+In an employee database application, use the "default" (package-private) access modifier for methods and attributes that should only be accessible within the same package, such as utility methods or helper classes.
+
+Scenario 5: Travel Booking System
+In a travel booking system, use a combination of access modifiers, such as "private" for sensitive data like customer payment details, "protected" for methods used within specific subclasses, and "public" for API methods accessible by external systems.
+
+Encapsulation:
+
+Scenario 1: Vehicle Manufacturing
+In a vehicle manufacturing system, encapsulate the internal details of a "Car" class, such as engine specifications and manufacturing processes, to protect sensitive information and provide a controlled interface for interacting with the car.
+
+Scenario 2: Health Tracking Application
+In a health tracking application, encapsulate the "User" class's personal health data, such as weight, heart rate, and sleep patterns, to maintain privacy and provide controlled access to the user's health information.
+
+Scenario 3: Online Banking Application
+In an online banking application, encapsulate the "Account" class's balance and transaction history to protect the customer's financial information and ensure that interactions with the account are performed through controlled methods.
+
+Scenario 4: Smart Home Automation System
+In a smart home automation system, encapsulate the internal workings of devices like "Thermostat" and "LightingController" to provide a simplified interface for controlling and monitoring these devices while hiding complex implementation details.
+
+Scenario 5: Customer Relationship Management (CRM) System
+In a CRM system, encapsulate the customer data and methods for managing customer interactions to ensure data integrity, privacy, and controlled access to customer information.
+
+Array: 
+
+Scenario 1: Student Grades
+In a school grading system, create an array to store the grades of students in a class. Perform operations such as calculating the average grade, finding the highest and lowest grades, and identifying students who scored above a certain threshold.
+
+Scenario 2: Sales Data Analysis
+In a retail business, create an array to store the daily sales data for different products. Perform operations such as calculating the total sales, finding the best-selling product, and generating a sales report for a specific period.
+
+Scenario 3: Weather Tracking
+In a weather monitoring system, create an array to store temperature data for a specific location over a period of time. Perform operations such as finding the average temperature, identifying the hottest and coldest days, and generating a temperature graph.
+
+Scenario 4: Contact Management
+In a contact management application, create an array to store contact information such as names, phone numbers, and email addresses. Implement features such as adding new contacts, searching for a specific contact, and deleting contacts from the array.
+
+Scenario 5: Inventory Management
+In an inventory management system, create an array to store the quantities of different products in stock. Perform operations such as updating stock levels, searching for products based on certain criteria, and generating an inventory report.
+
+Scenario 6: Student Enrollment
+In a university enrollment system, create an array to store the courses in which students are enrolled. Perform operations such as adding or dropping courses, checking the number of enrolled students in each course, and generating enrollment reports.
+
+Scenario 7: Product Ratings
+In an e-commerce platform, create an array to store the ratings given by users for different products. Perform operations such as calculating the average rating for a product, identifying highly rated products, and allowing users to submit their ratings.
+
+Scenario 8: Stock Portfolio Management
+In a stock portfolio management system, create an array to store the number of shares and prices of different stocks in a portfolio. Perform operations such as calculating the total portfolio value, identifying the best-performing stocks, and generating performance reports.
+
+Scenario 9: Event RSVPs
+In an event management system, create an array to store the RSVP status of attendees for an event. Perform operations such as counting the number of confirmed attendees, generating a guest list, and checking the availability of seats.
+
+Scenario 10: Survey Data Analysis
+In a survey data analysis application, create an array to store the responses of participants to survey questions. Perform operations such as calculating the percentage of participants with specific responses, generating charts or graphs based on the survey data, and extracting insights from the responses.
