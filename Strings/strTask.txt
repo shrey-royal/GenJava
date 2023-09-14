@@ -101,3 +101,65 @@ The quick brown fox jumps over the lazy dog. The dog barks and the fox runs away
 11. Interning Strings:
     - Input: (No user input needed)
     - Output: Interned paragraph: "The quick brown fox jumps over the lazy dog. The dog barks and the fox runs away."
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+1. Chat Message Reversal: In a chat application, when a user wants to see a chat message history in reverse order, you can use 'StringBuilder' or 'StringBuffer' to efficiently reverse and display the messages.
+
+2. Log Entry Aggregation: In a server log analysis tool, you need to efficiently concatenate log entries from various sources into a single report. You can use 'StringBuilder' or 'StringBuffer' to improve performance.
+
+3. Text Editor Auto-Correction: In a text editing software, when a user pastes text, you can use 'StringBuilder' or 'StringBuffer' to manipulate the pasted text, such as trimming excess whitespace or converting tabs to spaces.
+
+4. Password Validation: In a security application, you want to check if a user-entered password is a palindrome to prevent easily guessable passwords. 'StringBuilder' or 'StringBuffer' can help you perform this check efficiently.
+
+5. Data Compression: In a file compression tool, you need to compress a large text file by replacing consecutive repeated characters with a single instance, effectively reducing file size. You can use 'StringBuilder' or 'StringBuffer' to accomplish this.
+
+6. Document Comparison: In a plagiarism detection system, you want to compare two documents and highlight the differences between them. You can use 'StringBuilder' or 'StringBuffer' to generate a comparison report.
+
+7. Search Engine Results: In a search engine, when displaying search results, you may need to extract and display snippets of text containing the search query. 'StringBuilder' or 'StringBuffer' can help you efficiently extract these snippets.
+
+8. Text Editor Find and Replace: In a text editor, when a user wants to find and replace all occurrences of a word or phrase within a document, you can use 'StringBuilder' or 'StringBuffer' to perform the replacements efficiently.
+
+9. Data Encryption for Communication: In a secure messaging application, you need to encrypt the user's message before sending it, and then decrypt it on the recipient's end. 'StringBuilder' or 'StringBuffer' can help manage the encrypted message efficiently.
+
+10. Report Generation: In a business reporting tool, you want to format various pieces of information (e.g., sales figures, customer data) into a well-structured report. 'StringBuilder' or 'StringBuffer' can be used to build the report efficiently.
+
+Test Cases:
+
+1. Chat Message Reversal:
+   - Test Case 1: Input message: "Hello, how are you?" Output: "?uoy era woh ,olleH"
+   - Test Case 2: Input message: "Java is fun!" Output: "!nuf si avaJ"
+
+2. Log Entry Aggregation:
+   - Test Case 1: Input log entries from multiple sources. Ensure that the concatenated log contains entries from all sources.
+
+3. Text Editor Auto-Correction:
+   - Test Case 1: Input text with leading and trailing whitespace. Verify that the output has whitespace removed.
+   - Test Case 2: Input text with tabs. Ensure that tabs are converted to spaces.
+
+4. Password Validation:
+   - Test Case 1: Input password: "racecar". Expect it to be identified as a palindrome.
+   - Test Case 2: Input password: "secure123". Expect it not to be identified as a palindrome.
+
+5. Data Compression:
+   - Test Case 1: Input string: "aaabbbccdd". Expect compressed output: "abcd"
+   - Test Case 2: Input string: "xyz". Expect compressed output: "xyz"
+
+6. Document Comparison:
+   - Test Case 1: Compare two identical documents. Expect no differences to be highlighted.
+   - Test Case 2: Compare two different documents. Expect differences to be highlighted.
+
+7. Search Engine Results:
+   - Test Case 1: Input search query: "apple". Check if snippets containing the query are extracted correctly from search results.
+
+8. Text Editor Find and Replace:
+   - Test Case 1: Input text with multiple occurrences of a word. Replace all occurrences with a different word and verify the replacements.
+
+9. Data Encryption for Communication:
+   - Test Case 1: Encrypt a message and then decrypt it using the same encryption key. Ensure that the original message is recovered.
+
+10. Report Generation:
+    - Test Case 1: Generate a report with sample data. Verify that the report format is as expected with the provided data.
