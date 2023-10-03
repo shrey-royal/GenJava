@@ -1,0 +1,16 @@
+Tasks:
+
+1. Text File Copying:
+   Design a Java program that reads the contents of one text file using a 'FileReader' and then writes the content to another text file using a 'FileWriter'. Ensure that the program handles file exceptions gracefully.
+
+2. Text File Encryption/Decryption:
+   Create a Java application that reads the content of a text file using a 'FileReader', performs encryption on the content (e.g., Caesar cipher), and writes the encrypted content to another text file using a 'FileWriter'. Additionally, create a decryption program to reverse the process.
+
+3. Word Frequency Counter:
+   Implement a Java program that reads a text file using a 'FileReader', analyzes the text, and counts the frequency of each word in the file. Then, write the word-frequency pairs to another text file using a 'FileWriter'. Ignore common stop words like "the," "and," etc., while counting.
+
+4. Log File Analysis:
+   Develop a Java application that reads a log file using a 'FileReader', extracts relevant information (e.g., timestamps, error messages), and generates a summary report. Write this report to a separate text file using a 'FileWriter'. The program should handle log file variations and errors.
+
+5. CSV File Parsing and Transformation:
+   Create a Java program that reads a CSV file using a 'FileReader', performs data transformation (e.g., filtering, aggregation), and writes the transformed data to another CSV file using a 'FileWriter'. Allow users to specify the transformation rules as input.

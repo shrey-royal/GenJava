@@ -1,0 +1,12 @@
+Reader and Writer classes which helps in reading and writing the data from and to the file respectively. These classes are mainly used to read and write text data.
+
+FileInputStream and FileOutputStream classes are used to read and write binary data from and to the file respectively.
+
+text data: data which can be represented in the form of characters is known as text data. For example: abc, xyz, 123 etc.
+
+binary data: data which cannot be represented in the form of characters is known as binary data. For example: images, audio, video etc.
+
+text data : "abcd", "xyz", "123" etc.
+binary data: images(101010001010101111), audio(1010010101001011101011001), video(10101010101111001010001) etc.
+
+the FileInputStream and FileOutputStream can handle data in the form of bytes only. Hence, these classes are used to read and write binary data from and to the file respectively. it can also handle the text data as well.
