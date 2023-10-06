@@ -1,0 +1,5 @@
+This is a sample text that you can store in a file.
+You can replace this text with any content you want.
+Feel free to add more lines or customize it as needed.
+
+Happy coding!
