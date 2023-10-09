@@ -35,3 +35,19 @@ public class TransferImage {
         }
     }
 }
+
+/*
+Enter source filepath: "/Users/eduardo/Desktop/Java I-0/input.png"
+Enter target dir: 
+
+(current dir selected as target dir by default)
+
+Bytes transferred: 1024
+
+1. transfer
+2. delete
+
+
+
+
+*/
