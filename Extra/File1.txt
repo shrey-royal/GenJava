@@ -1,0 +1,249 @@
+1) Abstract-Interface-Normal class:
+
+
+// Abstract class
+abstract class A {
+    abstract void methodA();
+}
+
+// Interface
+interface B {
+    void methodB();
+}
+
+// Normal class
+class C extends A implements B {
+    @Override
+    void methodA() {
+        System.out.println("Method A implemented in class C");
+    }
+
+    @Override
+    public void methodB() {
+        System.out.println("Method B implemented in class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C c = new C();
+        c.methodA();
+        c.methodB();
+    }
+}
+
+
+2) Interface-Abstract-Concrete class:
+
+
+// Interface
+interface A {
+    void methodA();
+}
+
+// Abstract class
+abstract class B implements A {
+    abstract void methodB();
+}
+
+// Concrete class
+class C extends B {
+    @Override
+    public void methodA() {
+        System.out.println("Method A implemented in class C");
+    }
+
+    @Override
+    void methodB() {
+        System.out.println("Method B implemented in class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C c = new C();
+        c.methodA();
+        c.methodB();
+    }
+}
+
+
+3) Static class-Abstract-Normal class:
+
+You cannot declare a class as "static" in Java, so this combination is not possible.
+
+4) Singleton class-Final Abstract-Normal class:
+
+
+// Singleton class
+class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+
+// Final abstract class
+final abstract class B {
+    abstract void methodB();
+}
+
+// Normal class
+class C extends B {
+    @Override
+    void methodB() {
+        System.out.println("Method B implemented in class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Singleton singleton = Singleton.getInstance();
+        C c = new C();
+        c.methodB();
+    }
+}
+
+
+5) Abstract-Singleton class-Normal class:
+
+
+// Abstract class
+abstract class A {
+    abstract void methodA();
+}
+
+// Singleton class
+class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+
+// Normal class
+class C extends A {
+    @Override
+    void methodA() {
+        System.out.println("Method A implemented in class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Singleton singleton = Singleton.getInstance();
+        C c = new C();
+        c.methodA();
+    }
+}
+
+
+Please note that you cannot declare a class as "static" in Java, so I excluded that combination. Additionally, using a final abstract class might not always be meaningful because abstract classes are meant to be subclassed, and declaring them as final can prevent that.
+
+The answers to your questions are as follows:
+
+1) Abstract-Interface-Normal class:
+   - Is it possible to have an abstract class that implements an interface and is then extended by a normal (concrete) class? 
+     Answer: Yes
+
+2) Interface-Abstract-Concrete class:
+   - Is it possible to have an interface that is implemented by an abstract class, which is then extended by a concrete class?
+     Answer: Yes
+
+3) Static class-Abstract-Normal class:
+   - Is it possible to declare a class as "static" in Java and then have it as part of an inheritance hierarchy with an abstract class and a normal (concrete) class?
+     Answer: No
+
+4) Singleton class-Final Abstract-Normal class:
+   - Is it possible to have a Singleton class, a final abstract class, and a normal (concrete) class in an inheritance hierarchy?
+     Answer: Yes
+
+5) Abstract-Singleton class-Normal class:
+   - Is it possible to have an abstract class that is part of an inheritance hierarchy with a Singleton class and a normal (concrete) class?
+     Answer: Yes
+
+
+
+Test Case 1: Basic Log File
+- Input log file (`input.log`):
+
+[2023-10-08 08:30:00] ERROR: An error occurred.
+[2023-10-08 08:35:00] ERROR: Another error.
+[2023-10-08 08:40:00] INFO: This is an informational message.
+[2023-10-08 08:45:00] ERROR: Yet another error.
+
+- Expected Output summary (`summary.txt`):
+
+Timestamp: 2023-10-08 08:30:00
+Error Message: An error occurred.
+
+Timestamp: 2023-10-08 08:35:00
+Error Message: Another error.
+
+Timestamp: 2023-10-08 08:45:00
+Error Message: Yet another error.
+
+
+Test Case 2: Log File with Irrelevant Lines
+- Input log file (`input.log`):
+
+[2023-10-08 08:30:00] ERROR: An error occurred.
+This is a random line.
+[2023-10-08 08:35:00] ERROR: Another error.
+[2023-10-08 08:40:00] DEBUG: Debug message.
+[2023-10-08 08:45:00] ERROR: Yet another error.
+
+- Expected Output summary (`summary.txt`):
+
+Timestamp: 2023-10-08 08:30:00
+Error Message: An error occurred.
+
+Timestamp: 2023-10-08 08:35:00
+Error Message: Another error.
+
+Timestamp: 2023-10-08 08:45:00
+Error Message: Yet another error.
+
+
+Test Case 3: Log File with Multi-Line Error Messages
+- Input log file (`input.log`):
+
+[2023-10-08 08:30:00] ERROR: An error occurred.
+This is a multi-line error message.
+It has multiple lines.
+[2023-10-08 08:35:00] ERROR: Another error.
+[2023-10-08 08:45:00] ERROR: Yet another error.
+
+- Expected Output summary (`summary.txt`):
+
+Timestamp: 2023-10-08 08:30:00
+Error Message: An error occurred.
+This is a multi-line error message.
+It has multiple lines.
+
+Timestamp: 2023-10-08 08:35:00
+Error Message: Another error.
+
+Timestamp: 2023-10-08 08:45:00
+Error Message: Yet another error.
+
+
+Test Case 4: Empty Log File
+- Input log file (`input.log`):
+
+
+- Expected Output summary (`summary.txt`):
