@@ -37,43 +37,41 @@ public class HasMap {
         // System.out.println("Is map contains value Ram: " + map.containsValue("Ram"));
 
         //replace
-        map.replace(1, "Ram", "Ramchandra");
-        System.out.println(map);
+        // map.replace(1, "Ram", "Ramchandra");
+        // System.out.println(map);
 
         //remove
-        map.remove(1);
-        System.out.println(map);
+        // map.remove(1);
+        // System.out.println(map);
 
         //clear
-        map.clear();
-        System.out.println(map);
+        // map.clear();
+        // System.out.println(map);
 
         //putAll
-        HashMap<Integer, String> map1 = new HashMap<Integer, String>();
-        map1.put(1, "Car");
-        map1.put(2, "Bike");
-        map1.put(3, "Cycle");
+        // HashMap<Integer, String> map1 = new HashMap<Integer, String>();
+        // map1.put(1, "Car");
+        // map1.put(2, "Bike");
+        // map1.put(3, "Cycle");
 
-        map.putAll(map1);
-        System.out.println(map);
+        // map.putAll(map1);
+        // System.out.println(map);
 
         //keySet
-        System.out.println(map.keySet());
+        // System.out.println(map.keySet());
 
         //values
-        System.out.println(map.values());
+        // System.out.println(map.values());
 
         //entrySet
-        System.out.println(map.entrySet());
+        // System.out.println(map.entrySet());
 
         //getOrDefault
-        System.out.println(map.getOrDefault(1, "Not Found"));
+        // System.out.println(map.getOrDefault(1, "Not Found"));
 
         //putIfAbsent
-        map.putIfAbsent(1, "Car");
-        System.out.println(map);
-
-        
+        // map.putIfAbsent(111, "Car");
+        // System.out.println(map);
 
     }
 }
@@ -98,10 +96,48 @@ Methods of HashMap:
 13. entrySet(): This method is used to return the Set view containing all the keys and values.
 14. getOrDefault(Object key, V defaultValue): This method is used to return the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.
 15. putIfAbsent(K key, V value): This method inserts the specified value with the specified key in the map only if it is not already specified.
-16. remove(Object key, Object value): This method removes the specified values with the associated specified keys from the map.
-17. replace(K key, V oldValue, V newValue): This method replaces the specified oldValue with the newValue for the specified key only if it is currently mapped to the oldValue.
-18. replace(K key, V value): This method replaces the specified value for the specified key only if it is currently mapped to some value.
 
+
+
+*/
+
+/*
+Problem Title: Calculate Average Grades
+
+Problem Description:
+
+You are tasked with writing a program to calculate the average grades of a group of students. The program should take a list of student names and their corresponding grades as input and then compute the average grade for the entire class.
+
+Input:
+- A list of student names (strings).
+- A list of corresponding grades (floating-point numbers).
+
+Output:
+- The average grade for the class (a floating-point number).
+
+Function Signature:
+
+---
+public static double calculateAverageGrade(String[] studentNames, double[] studentGrades) {
+    // Your code here
+    return 0.0; // Placeholder return value
+}
+
+// Example usage
+String[] studentNames = {"Alice", "Bob", "Charlie", "David"};
+double[] studentGrades = {85.5, 92.0, 78.5, 88.0};
+double averageGrade = calculateAverageGrade(studentNames, studentGrades);
+System.out.println("Average Grade: " + averageGrade);
+---
+
+Constraints:
+- 1 <= Number of students <= 1000
+- Grades are floating-point numbers between 0 and 100.
+
+Note:
+- You need to calculate the average grade by summing up all the grades and dividing by the number of students.
+
+Your task is to implement the 'calculate_average_grade' function that computes the average grade for the given list of student names and their grades.
 
 
 
