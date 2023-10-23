@@ -1,0 +1,14 @@
+JDBC: Java To Database Connectivity
+
+using Jdbc we can connect to any database from java program. 
+
+Steps to connect to database from java program. 
+
+1. Load the driver class. (Act as bridge between java program and database)
+2. Create connection (connect to database)
+3. Create statement  (create sql query to execute)
+4. Execute query (execute/run sql query)
+5. Close connection (close connection to database)
+
+CheatSheet: 
+https://learnsql.com/blog/mysql-cheat-sheet/mysql-cheat-sheet-a4.pdf
